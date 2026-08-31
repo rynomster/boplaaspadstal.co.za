@@ -89,6 +89,15 @@ nav a:hover, footer a:hover { opacity: .65; }
 .contact-row { display: flex; gap: 42px; padding-top: 30px; }
 .contact-row a { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 5px; }
 
+.faq { background: var(--paper); display: grid; grid-template-columns: 24% 1fr; gap: 8vw; }
+.faq-container { max-width: 940px; }
+.faq-heading h2 { margin: 0 0 40px; font-size: clamp(48px, 6.1vw, 82px); line-height: .98; letter-spacing: -.045em; }
+.faq-list { margin: 0; padding-top: 10px; border-top: 1px solid var(--line); }
+.faq-item { padding: 28px 0; border-bottom: 1px solid var(--line); }
+.faq-item dt { font-family: Georgia, "Times New Roman", serif; font-size: clamp(20px, 2.2vw, 26px); font-weight: 500; color: var(--ink); margin-bottom: 12px; }
+.faq-item dd { margin-left: 0; color: var(--muted); line-height: 1.7; font-size: 16px; max-width: 720px; }
+.faq-item dd a { color: var(--oxblood); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
 footer { min-height: 210px; padding: 46px clamp(22px, 8vw, 120px); background: var(--ink); color: rgba(255,255,255,.7); display: grid; grid-template-columns: 1fr auto auto; align-items: end; gap: 50px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
 .footer-brand { display: flex; align-items: end; gap: 28px; }
 .footer-brand img { width: 120px; height: 78px; object-fit: contain; background: white; }
@@ -105,8 +114,8 @@ footer { min-height: 210px; padding: 46px clamp(22px, 8vw, 120px); background: v
   .hero-shade { background: linear-gradient(90deg, rgba(18,24,19,.88), rgba(18,24,19,.32)), linear-gradient(0deg, rgba(18,24,19,.45), transparent); }
   .hero-stamp { width: 104px; height: 104px; right: 22px; bottom: 38px; font-size: 12px; }
   .hero-stamp strong { font-size: 16px; }
-  .intro { grid-template-columns: 1fr; gap: 42px; }
-  .offerings-heading, .visit-title { display: block; }
+  .intro, .faq { grid-template-columns: 1fr; gap: 42px; }
+  .offerings-heading, .visit-title, .faq-heading { display: block; }
   .offering-grid { grid-template-columns: 1fr; }
   .offering-card, .offering-card:first-child, .offering-card:last-child { min-height: 300px; padding: 28px 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .offering-card:last-child { border-bottom: 0; }
