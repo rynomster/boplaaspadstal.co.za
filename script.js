@@ -38,4 +38,22 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  // Sticky Mobile Action Bar Scroll Logic
+  const stickyBar = document.querySelector("#sticky-mobile-bar");
+  const heroSection = document.querySelector("#top");
+
+  if (stickyBar && heroSection) {
+    const handleScroll = () => {
+      const heroBottom = heroSection.getBoundingClientRect().bottom;
+      if (heroBottom < 60) {
+        stickyBar.classList.add("is-visible");
+      } else {
+        stickyBar.classList.remove("is-visible");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+  }
 });
