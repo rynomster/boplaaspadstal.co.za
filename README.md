@@ -6,12 +6,21 @@ A single-page, static website for Boplaas Padstal. It uses only HTML, CSS and a 
 
 - `index.html` — the complete one-page website
 - `styles.css` — all visual and responsive styling
-- `script.js` — updates the copyright year
+- `script.js` — updates the copyright year, handles sticky mobile action bar, and tracks conversion events
 - `images/` — logo, storefront and Open Day poster
 - `CNAME` — connects GitHub Pages to `boplaaspadstal.co.za`
 - `DESIGN.md` — design rules for future changes
 
 There are no packages to install, no database, no server and no build command.
+
+## Google Analytics (GA4) Configuration
+
+By default, analytics tracking script execution is commented out in `index.html` to prevent invalid network requests. To enable GA4 tracking:
+
+1. Open `index.html`.
+2. Locate the Google Analytics configuration comment block in `<head>`.
+3. Replace `G-XXXXXXXXXX` with your actual Google Analytics 4 Measurement ID.
+4. Uncomment the `<script>` tags.
 
 ## Run locally
 
