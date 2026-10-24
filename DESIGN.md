@@ -27,7 +27,7 @@ Avoid generic country-shop styling, fake timber textures, gingham patterns, grad
 
 ## 3. Colour palette
 
-The CSS custom properties in `app/globals.css` are canonical.
+The CSS custom properties in `styles.css` are canonical.
 
 | Token | Value | Usage |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ Use a loose 8px rhythm for component spacing, with common gaps of 18, 24, 30, 36
 - Divided by thin lines rather than individual boxes or shadows
 - Number and line icon at the top
 - Large serif Afrikaans title, small uppercase English translation, then concise copy
-- Lucide icons use approximately 1.5px stroke weight
+- Icons use clean SVG strokes or typographic marks
 
 ### Event feature
 
@@ -175,7 +175,7 @@ Use a loose 8px rhythm for component spacing, with common gaps of 18, 24, 30, 36
 
 ## 8. Icons
 
-- Use `lucide-react` throughout.
+- Use simple, lightweight inline SVG icons or typographic marks throughout.
 - Default stroke width: 1.5–2px.
 - Icons support a label; they should rarely stand alone.
 - Do not mix filled, cartoon or multi-colour icon sets.
@@ -228,7 +228,7 @@ Test all future additions at approximately 375px, 768px and 1440px widths.
 - Do not publish unverified opening hours, prices, contact details or event information.
 - Keep the primary visitor flow: **understand Boplaas → see the offering → get directions or make contact**.
 - Reuse the existing CSS variables and component patterns before creating new ones.
-- New visual tokens must be added to this file and `app/globals.css` together.
+- New visual tokens must be added to this file and `styles.css` together.
 - Do not add a UI library or alternate icon set for ordinary site sections.
 - Preserve the static-site build and GitHub Pages compatibility.
 
